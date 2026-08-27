@@ -1,0 +1,122 @@
+{
+  "info": {
+    "_postman_id": "8d7c22d5-b53a-4a72-aa8a-2be91cc7908a",
+    "name": "Pets API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57672935",
+    "_collection_link": "https://go.postman.co/collection/57672935-8d7c22d5-b53a-4a72-aa8a-2be91cc7908a?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Add Pet",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Buddy\",\n  \"species\": \"Dog\",\n  \"age\": 1,\n  \"color\": \"Brown\",\n  \"weight\": 2\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/pets",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "pets"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Pet with ID",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Buddy\",\n  \"species\": \"Dog\",\n  \"age\": 1,\n  \"color\": \"Brown\",\n  \"weight\": 2\n}"
+        },
+        "url": {
+          "raw": "http://localhost:4000/pets/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "pets",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add other pet",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Simba\",\n  \"species\": \"Dog\",\n  \"age\": 4,\n  \"color\": \"Black\",\n  \"weight\": 30\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/pets",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "pets"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Pet",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Pet",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/pets/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "pets",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
